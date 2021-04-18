@@ -45,7 +45,7 @@ services:
             - "443:443"
         restart: unless-stopped
         volumes:
-            - ./nginx:/etc/nginx
+            - ./nginx:/etc/nginx:ro
             - ./data/certbot/conf:/etc/letsencrypt
             - ./data/certbot/www:/var/www/certbot
         command: >

@@ -37,7 +37,7 @@ services:
             - POSTGRES_PORT=${POSTGRES_PORT}
             - POSTGRES_HOST=db
     nginx:
-        image: nginx/latest
+        image: nginx:latest
         depends_on:
             - app
         ports:

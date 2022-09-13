@@ -35,3 +35,8 @@ POSTGRES_PASSWD=<password> docker-compose up -d
 * The `postgres` service stores its database on a named volume (`joplin_db`).
 * The `postgres` service will automatically backup the database and dump the backups in the `./pg_backup` directory on the host. It is recommended that the `./pg_backup` directory be used as a mount point for a remote filesystem. In future, Amazon S3/DigitalOcean Spaces may be used as the default for this.
 * The `certbot` and `nginx` services will automatically renew the SSL cert every twelve hours. 
+
+
+### Infrastructure model
+
+![Infrastructure model](.infragenie/infrastructure_model.png)
